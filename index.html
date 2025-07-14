@@ -1,12 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Clone YT</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Clone do YouTube focado em vídeos de programação. HTML e CSS responsivo, com boas práticas de UX, SEO e semântica." />
+  <title>YouTube Clone </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pVZFkdsj8kpUUXHb36hMRVlyBYcbwl1A6BRiykeMQRAUv60yQy0LPBbXk4cdKYeZWnGCwB4MwT2Nkeq+25b/2g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
 <body>
-    
+  <header aria-label="Cabeçalho do site">
+    <div class="container-header">
+      <img
+        src="https://www.logo.wine/a/logo/YouTube/YouTube-Logo.wine.svg"
+        alt="Logo do YouTube"
+        style="height: 32px"
+      />
+      <form role="search" aria-label="Formulário de pesquisa">
+        <input type="search" placeholder="Pesquisar conteúdo de programação" name="q" />
+      </form>
+      <nav aria-label="Menu rápido">
+        <ul class="user-actions">
+          <li><i class="fas fa-bell" title="Notificações" aria-hidden="true"></i></li>
+          <li><i class="fas fa-video" title="Criar vídeo" aria-hidden="true"></i></li>
+          <li><img src="images/avatar.png" alt="Usuário logado" class="user-avatar" /></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="featured-video" aria-label="Vídeo em destaque">
+      <iframe
+        src="https://www.youtube.com/embed/S9uPNppGsGo"
+        title="Curso de JavaScript para Iniciantes"
+        allowfullscreen
+      ></iframe>
+
+      <h1 class="video-heading">Curso JavaScript Completo para Iniciantes - do Zero ao DOM</h1>
+
+      <div class="channel-meta">
+        <img src="https://yt3.googleusercontent.com/ytc/AL5GRJWJVGpOKl8sTzngJgGVe5XGfKXb_vF2Z9-fbF2N=s88-c-k-c0x00ffffff-no-rj" alt="Logo do canal Programador na Prática" />
+        <div class="channel-details">
+          <strong>Programador na Prática</strong>
+          <small>120 mil inscritos</small>
+        </div>
+        <button class="btn-inscrever">Inscrever-se</button>
+      </div>
+
+      <div class="actions" aria-label="Interações do vídeo">
+        <button data-icon="\f164" title="Curtir">Curtir</button>
+        <button data-icon="\f165" title="Não gostei">Não gostei</button>
+        <button data-icon="\f1e0" title="Compartilhar">Compartilhar</button>
+        <button data-icon="\f019" title="Fazer download">Download</button>
+      </div>
+
+      <article class="video-info">
+        <header>
+          <strong>1.2M visualizações · Publicado em 10 jan. de 2023</strong>
+        </header>
+        <p>
+          Aprenda JavaScript moderno em uma abordagem prática e direta, construindo projetos e entendendo a lógica da
+          linguagem.
+        </p>
+      </article>
+    </section>
+
+    <aside class="video-sidebar" aria-label="Sugestões de vídeos">
+      <article class="video-suggestion">
+        <iframe
+          src="https://www.youtube.com/embed/3PHXvlpOkf4"
+          title="Curso Completo de JavaScript"
+          allowfullscreen
+        ></iframe>
+        <div class="suggestion-info">
+          <h2>Curso Completo de JavaScript</h2>
+          <p>Curso em Vídeo</p>
+          <small>4,5M visualizações · há 2 anos</small>
+        </div>
+      </article>
+
+      <article class="video-suggestion">
+        <iframe
+          src="https://www.youtube.com/embed/rfscVS0vtbw"
+          title="Curso de Python para Iniciantes"
+          allowfullscreen
+        ></iframe>
+        <div class="suggestion-info">
+          <h2>Curso de Python para Iniciantes</h2>
+          <p>freeCodeCamp.org</p>
+          <small>20M visualizações · há 3 anos</small>
+        </div>
+      </article>
+
+      <article class="video-suggestion">
+        <iframe
+          src="https://www.youtube.com/embed/0fKg7e37bQE"
+          title="CSS Crash Course"
+          allowfullscreen
+        ></iframe>
+        <div class="suggestion-info">
+          <h2>CSS Crash Course</h2>
+          <p>Traversy Media</p>
+          <small>1,6M visualizações · há 3 anos</small>
+        </div>
+      </article>
+
+      <article class="video-suggestion">
+        <iframe
+          src="https://www.youtube.com/embed/Oe421EPjeBE"
+          title="Node.js Tutorial"
+          allowfullscreen
+        ></iframe>
+        <div class="suggestion-info">
+          <h2>Node.js Tutorial</h2>
+          <p>Programming with Mosh</p>
+          <small>2,3M visualizações · há 4 anos</small>
+        </div>
+      </article>
+    </aside>
+  </main>
 </body>
 </html>
